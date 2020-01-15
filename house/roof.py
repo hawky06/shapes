@@ -1,0 +1,15 @@
+import math
+def draw_roof(bob,x,y,width):
+    bob.penup()
+    bob.setx(x)
+    bob.sety(y)
+    bob.setheading(0)
+    bob.pendown()
+    bob.fillcolor("dark red")
+    bob.begin_fill()
+    bob.forward(width)
+    bob.left(135)
+    bob.forward(math.sqrt((width**2)/2))
+    bob.left(90)
+    bob.forward(math.sqrt((width**2)/2))
+    bob.end_fill()
