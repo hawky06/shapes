@@ -3,7 +3,7 @@ from turtle import *
 from square import draw_square
 from triangle import draw_triangle
 
-def draw_window(bob,x,y):
+def draw_window_square(bob,x,y):
     
     bob.penup()
     bob.setx(x)
@@ -26,7 +26,7 @@ def draw_window(bob,x,y):
         bob.forward(20)
         bob.right(90)
         
-def draw_window2(bob,x,y):
+def draw_window_triangle(bob,x,y):
     
     bob.penup()
     bob.setx(x)
