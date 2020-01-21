@@ -8,34 +8,35 @@ from windows import *
 bob=turtle.Turtle()
 colormode(255)
 
-def draw_house(x,y):
+def draw_house(x,y,size):
     bob.penup()
     bob.setx(x)
     bob.sety(y)
     bob.setheading(0)
     bob.pendown()
-    window_width=40
-        
+    window_width=size/5
+    door_width=window_width
+    
     #main structure
-    draw_walls(bob,x,y)
+    draw_walls(bob,x,y,size)
             
     #door
-    draw_door(bob,x+80,y)
+    draw_door(bob,x+size/2-door_width/2,y,door_width)
 
     #bottom left window
-    draw_window_circle(bob,x+20,y+35,window_width)
+    draw_window_circle(bob,x+size/10,y+size/6,window_width)
 
     #bottom right window
-    draw_window_square(bob,x+140,y+35,window_width)
+    draw_window_square(bob,x+size/1.4,y+size/6,window_width)
 
     #top left window
-    draw_window_triangle_equilateral(bob,x+20,y+125,window_width)
+    draw_window_triangle_equilateral(bob,x+size/10,y+size/1.6,window_width)
 
     #top right window
-    draw_window_triangle_equilateral(bob,x+140,y+125,window_width)
+    draw_window_triangle_equilateral(bob,x+size/1.4,y+size/1.6,window_width)
 
     #roof
-    draw_roof(bob,x+-25,y+200,250)
+    draw_roof(bob,x-size/8,y+size,size*1.25)
 
-draw_house(0,0)
-draw_house(250,100)
+draw_house(0,0,200)
+draw_house(250,100,100)

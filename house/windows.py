@@ -19,11 +19,11 @@ def draw_window_square(bob,x,y,width):
     
     bob.setheading(90)
     for i in range(2):
-        bob.forward(20)
+        bob.forward(width/2)
         bob.right(90)
-        bob.forward(40)
+        bob.forward(width)
         bob.right(90)
-        bob.forward(20)
+        bob.forward(width/2)
         bob.right(90)
         
 def draw_window_triangle_equilateral(bob,x,y,width):

@@ -1,4 +1,4 @@
-def draw_door(bob,x,y):
+def draw_door(bob,x,y,width):
     bob.penup()
     bob.setx(x)
     bob.sety(y)
@@ -7,8 +7,8 @@ def draw_door(bob,x,y):
     bob.fillcolor("red")
     bob.begin_fill()
     for i in range(2):
-        bob.forward(85)
+        bob.forward(width*2)
         bob.right(90)
-        bob.forward(40)
+        bob.forward(width)
         bob.right(90)
     bob.end_fill()
