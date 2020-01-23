@@ -1,7 +1,5 @@
 import numpy
-from square import *
-from triangles import *
-from circle import *
+from shapes import *
 
 def draw_window_square(bob,x,y,width):
     
