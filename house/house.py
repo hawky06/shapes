@@ -18,25 +18,25 @@ def draw_house(x,y,size):
     door_width=window_width
     
     #main structure
-    draw_walls(bob,x,y,size)
+    draw_walls(bob,x, y, size)
             
     #door
-    draw_door(bob,x+size/2-door_width/2,y,door_width)
+    draw_door(bob, x+size/2-door_width/2, y, door_width)
 
     #bottom left window
-    draw_window_circle(bob,x+size/10,y+size/6,window_width)
+    draw_window_random(bob, x+size/10, y+size/6, window_width)
 
     #bottom right window
-    draw_window_square(bob,x+size/1.4,y+size/6,window_width)
+    draw_window_random(bob, x+size/1.4, y+size/6, window_width)
 
     #top left window
-    draw_window_triangle_equilateral(bob,x+size/10,y+size/1.6,window_width)
+    draw_window_random(bob, x+size/10,y+size/1.6, window_width)
 
     #top right window
-    draw_window_triangle_equilateral(bob,x+size/1.4,y+size/1.6,window_width)
+    draw_window_random(bob, x+size/1.4, y+size/1.6, window_width)
 
     #roof
-    draw_roof(bob,x-size/8,y+size,size*1.25)
-
-draw_house(0,0,200)
-draw_house(250,100,100)
+    draw_roof(bob, x-size/8, y+size, size*1.25)
+    
+draw_house(0, 0, 200)
+draw_house(250, 100, 100)
