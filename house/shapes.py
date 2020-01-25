@@ -22,7 +22,7 @@ def draw_circle(bob, x, y, radius):
     bob.circle(radius)
     bob.end_fill()
     
-def draw_triangle_equilateral(bob,x,y,width):
+def draw_triangle_equilateral(bob, x, y, width):
     bob.penup()
     bob.setx(x)
     bob.sety(y)
@@ -34,7 +34,7 @@ def draw_triangle_equilateral(bob,x,y,width):
         bob.left(120)
     bob.end_fill()
     
-def draw_triangle_right_angle(bob,x,y,width):
+def draw_triangle_right_angle(bob, x, y, width):
     bob.penup()
     bob.setx(x)
     bob.sety(y)
@@ -47,3 +47,19 @@ def draw_triangle_right_angle(bob,x,y,width):
     bob.left(90)
     bob.forward(math.sqrt((width**2)/2))
     bob.end_fill()
+    
+def draw_cross(bob, x, y, width):
+    bob.penup()
+    bob.setx(x + width / 2)
+    bob.sety(y)
+    bob.setheading(90)
+    bob.pendown()                                                                                                                                                                                                                                                  
+    bob.forward(width)
+    bob.penup()
+    bob.left(90)
+    bob.forward(width/2)
+    bob.left(90)
+    bob.forward(width/2)
+    bob.left(90)
+    bob.pendown()
+    bob.forward(width)

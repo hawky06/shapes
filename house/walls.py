@@ -1,4 +1,4 @@
-from square import draw_square
+from shapes import *
 
 def draw_walls(bob,x,y,size):
     bob.fillcolor("firebrick")

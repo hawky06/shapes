@@ -1,12 +1,4 @@
-import numpy
-
-words=['Hello',' World!']
-color = list(numpy.random.choice(range(256), size=3))
-
-
-a="hello"
-b=" world!"
-
-print(a+b)
-print(words[0]+words[1])
-print(color)
+import turtle
+from shapes import draw_cross
+bob=turtle.Turtle()
+draw_cross(bob,0,0,40)
