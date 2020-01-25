@@ -37,6 +37,9 @@ def draw_house(x,y,size):
 
     #roof
     draw_roof(bob, x-size/8, y+size, size*1.25)
-    
-draw_house(0, 0, 200)
-draw_house(250, 100, 100)
+
+for i in range(3):
+    x_random = numpy.random.choice(range(-200, 200))
+    y_random = numpy.random.choice(range(-200, 200))
+    size_random = numpy.random.choice(200)
+    draw_house(x_random, y_random, size_random)
