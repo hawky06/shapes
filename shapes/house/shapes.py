@@ -63,3 +63,21 @@ def draw_cross(bob, x, y, width):
     bob.left(90)
     bob.pendown()
     bob.forward(width)
+
+def draw_spiral_square(bob, x ,y, width):
+    bob.penup()
+    bob.setx(x)
+    bob.sety(y)
+    bob.setheading(0)
+    bob.pendown()
+
+    bob.forward(width)
+    bob.left(90)
+    reduction = width / 10
+
+    while width > 0:
+        bob.forward(width)
+        bob.left(90)
+        bob.forward(width)
+        bob.left(90)
+        width = width - reduction
