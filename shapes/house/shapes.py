@@ -12,9 +12,10 @@ def draw_square(bob, x, y, size):
         bob.left(90)
     bob.end_fill()
     
-def draw_circle(bob, x, y, radius):
+def draw_circle(bob, x, y, diameter):
+    radius = diameter / 2
     bob.penup()
-    bob.setx(x)
+    bob.setx(x+radius)
     bob.sety(y)
     bob.setheading(0)
     bob.pendown()
